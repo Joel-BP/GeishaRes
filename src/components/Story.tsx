@@ -4,8 +4,8 @@ import { useReveal } from '../lib/useReveal';
 const VALUES = [
   {
     icon: Mountain,
-    title: 'Florida Grown',
-    text: 'Cultivated in the rich soils of South Florida, where warm subtropical climate and careful cultivation produce exceptional flavor.',
+    title: 'Highland Grown',
+    text: 'Cultivated at 1,700+ meters in the volcanic soils of Boquete, where cooler temperatures slow ripening and concentrate flavor.',
   },
   {
     icon: Leaf,
@@ -42,20 +42,20 @@ export function Story() {
               </div>
               <h2 className="font-serif text-4xl font-semibold leading-tight text-cream-50 sm:text-5xl text-balance">
                 A legacy rooted in
-                <span className="text-gold-gradient italic"> Florida's coast</span>
+                <span className="text-gold-gradient italic"> Panama's highlands</span>
               </h2>
               <div className="mt-6 space-y-4 text-lg leading-relaxed text-cream-200">
                 <p>
                   Geisha Reserve was born from a singular obsession: to share the
-                  extraordinary coffee that grows in the sunshine of Florida.
+                  extraordinary coffee that grows in the cloud forests of Panama.
                   The Geisha varietal — originally from Ethiopia — found its spiritual
-                  home in the rich soils of South Florida, where it produces a cup so
+                  home in the volcanic soils of Boquete, where it produces a cup so
                   floral, so complex, that it has commanded record prices at auction
                   for two decades running.
                 </p>
                 <p>
-                  We work directly with a small group of family farms across South
-                  Florida, paying well above fair-trade rates. Every lot is cupped and
+                  We work directly with a small group of family farms in Boquete and
+                  Volcán, paying well above fair-trade rates. Every lot is cupped and
                   scored before it earns our label. No blends, no shortcuts — just
                   the purest expression of one of the world's rarest coffees.
                 </p>
@@ -74,8 +74,8 @@ export function Story() {
               </div>
               {/* Floating stat card */}
               <div className="absolute -bottom-6 -left-6 rounded-xl border border-espresso-700 bg-espresso-900/90 p-6 backdrop-blur-md">
-                <p className="font-serif text-4xl font-semibold text-gold-300">100%</p>
-                <p className="mt-1 text-sm text-cream-300">Florida-grown</p>
+                <p className="font-serif text-4xl font-semibold text-gold-300">1,900m</p>
+                <p className="mt-1 text-sm text-cream-300">Peak growing altitude</p>
               </div>
             </div>
           </div>

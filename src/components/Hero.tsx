@@ -7,7 +7,7 @@ export function Hero() {
       <div className="absolute inset-0">
         <img
           src="https://images.pexels.com/photos/2074130/pexels-photo-2074130.jpeg"
-          alt="Coffee plantation in Florida, USA"
+          alt="Coffee plantation in the mountains of Panama"
           className="h-full w-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-espresso-950/70 via-espresso-950/50 to-espresso-950" />
@@ -20,7 +20,7 @@ export function Hero() {
           <div className="mb-6 flex items-center gap-3 animate-fade-in">
             <div className="h-px w-12 bg-gold-400" />
             <span className="text-xs uppercase tracking-[0.3em] text-gold-300">
-              Single-Origin · Florida
+              Single-Origin · Panama
             </span>
           </div>
 
@@ -31,8 +31,8 @@ export function Hero() {
           </h1>
 
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-cream-200 animate-fade-up" style={{ animationDelay: '0.15s', opacity: 0, animationFillMode: 'forwards' }}>
-            Rare Geisha varietal, sustainably sourced from the sunny coastlines of
-            Florida. Hand-picked, small-batch roasted, and delivered at peak freshness.
+            Rare Geisha varietal, sustainably sourced from the volcanic highlands of
+            Panama. Hand-picked, small-batch roasted, and delivered at peak freshness.
           </p>
 
           <div className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center animate-fade-up" style={{ animationDelay: '0.3s', opacity: 0, animationFillMode: 'forwards' }}>
