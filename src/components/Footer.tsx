@@ -43,7 +43,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-gold-400" strokeWidth={1.5} />
-                Boquete, Chiriquí, Panama
+                Florida, USA
               </li>
             </ul>
           </div>
