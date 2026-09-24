@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { X, Plus, Minus, MapPin, Ruler, Gauge, Coffee } from 'lucide-react';
 import type { Product } from '../lib/types';
 import { useCart } from '../lib/cart';
+import { getProductImages } from '../lib/productImages';
 
 interface QuickViewModalProps {
   product: Product | null;
@@ -11,8 +12,11 @@ interface QuickViewModalProps {
 export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
   const { addToCart } = useCart();
   const [quantity, setQuantity] = useState(1);
+  const [activeImage, setActiveImage] = useState(0);
 
   if (!product) return null;
+
+  const images = product ? getProductImages(product) : [];
 
   const details = [
     product.origin && { icon: MapPin, label: 'Origin', value: product.origin },
@@ -37,14 +41,28 @@ export function QuickViewModal({ product, onClose }: QuickViewModalProps) {
         </button>
 
         <div className="grid md:grid-cols-2">
-          {/* Image */}
+          {/* Image gallery */}
           <div className="relative aspect-square md:aspect-auto md:h-full">
             <img
-              src={product.image_url || 'https://images.pexels.com/photos/1695054/pexels-photo-1695054.jpeg'}
+              src={images[activeImage]}
               alt={product.name}
               className="h-full w-full object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-espresso-950/40 to-transparent md:bg-gradient-to-r" />
+            {images.length > 1 && (
+              <div className="absolute bottom-4 left-1/2 flex -translate-x-1/2 gap-2">
+                {images.map((img, i) => (
+                  <button
+                    key={img}
+                    onClick={() => setActiveImage(i)}
+                    aria-label={`View image ${i + 1}`}
+                    className={`h-2.5 w-2.5 rounded-full transition-all ${
+                      i === activeImage ? 'bg-gold-400' : 'bg-cream-100/40 hover:bg-cream-100/70'
+                    }`}
+                  />
+                ))}
+              </div>
+            )}
           </div>
 
           {/* Details */}

@@ -1,6 +1,7 @@
 import { Plus, MapPin, Sparkles } from 'lucide-react';
 import type { Product } from '../lib/types';
 import { useCart } from '../lib/cart';
+import { getProductImages } from '../lib/productImages';
 
 interface ProductCardProps {
   product: Product;
@@ -9,6 +10,7 @@ interface ProductCardProps {
 
 export function ProductCard({ product, onQuickView }: ProductCardProps) {
   const { addToCart } = useCart();
+  const image = getProductImages(product)[0];
 
   return (
     <div className="group relative flex flex-col overflow-hidden rounded-2xl border border-espresso-700/50 bg-espresso-900/40 transition-all duration-500 hover:border-gold-400/40 hover:shadow-2xl hover:shadow-espresso-950/50">
@@ -19,7 +21,7 @@ export function ProductCard({ product, onQuickView }: ProductCardProps) {
         aria-label={`View ${product.name}`}
       >
         <img
-          src={product.image_url || 'https://images.pexels.com/photos/1695054/pexels-photo-1695054.jpeg'}
+          src={image}
           alt={product.name}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
           loading="lazy"
