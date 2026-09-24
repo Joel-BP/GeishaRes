@@ -5,7 +5,7 @@ import { useReveal } from '../lib/useReveal';
 const FAQS = [
   {
     question: 'What makes Geisha coffee so special?',
-    answer: 'The Geisha (or Gesha) varietal is renowned for its floral, tea-like cup profile with notes of jasmine, bergamot, and stone fruit. Originally from Ethiopia, it thrives in the high-altitude volcanic soils of Panama, producing a coffee so distinctive that it has set auction price records for over a decade. It is widely considered one of the finest coffee varietals in the world.',
+    answer: 'The Geisha (or Gesha) varietal is renowned for its floral, tea-like cup profile with notes of jasmine, bergamot, and stone fruit. Originally from Ethiopia, it thrives in the warm subtropical climate of Florida, producing a coffee so distinctive that it has set auction price records for over a decade. It is widely considered one of the finest coffee varietals in the world.',
   },
   {
     question: 'How fresh is the coffee when it arrives?',

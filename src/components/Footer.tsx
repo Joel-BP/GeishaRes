@@ -10,8 +10,8 @@ export function Footer() {
           <div className="lg:col-span-2">
             <Logo />
             <p className="mt-5 max-w-md text-sm leading-relaxed text-cream-300">
-              Rare single-origin Geisha coffee, sustainably sourced from the volcanic
-              highlands of Panama. Roasted to order, delivered fresh.
+              Rare single-origin Geisha coffee, sustainably sourced from Florida,
+              USA. Roasted to order, delivered fresh.
             </p>
             <div className="mt-6 flex gap-3">
               {[Instagram, Facebook, Twitter].map((Icon, i) => (
@@ -43,7 +43,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <MapPin className="h-4 w-4 text-gold-400" strokeWidth={1.5} />
-                Boquete, Chiriquí, Panama
+                Miami, Florida, USA
               </li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ const STEPS = [
   {
     number: '01',
     title: 'Sourced',
-    text: 'We work directly with family farms in Boquete and Volcán, Panama, selecting only top-scoring Geisha lots.',
+    text: 'We work directly with family farms across South Florida, selecting only top-scoring Geisha lots.',
   },
   {
     number: '02',
